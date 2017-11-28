@@ -1,0 +1,15 @@
+{
+  "title": "Teaser title with multiple words that should just keep wrapping no matter how long it is",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "imagePath": "http://placeimg.com/376/178/nature",
+  "image": "<img src=http://placeimg.com/376/178/nature class=img-responsive>",
+  "author": "Michelle Clark",
+  "date": "29 Jan 2017",
+  "topic_type": "Blog",
+  "group_name": "Open Social Developers",
+  "comment_count": "0",
+  "url": "/node/ID",
+  "visibility_label": "public",
+  "visibility_icon": "public",
+  "visibility_title": "{% trans %}The visibility of this content is set to {% endtrans %} "
+}

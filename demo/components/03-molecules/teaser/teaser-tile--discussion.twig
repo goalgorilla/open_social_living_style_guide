@@ -1,0 +1,44 @@
+{{ attach_library('socialbase/teaser') }}
+
+<div class="card teaser teaser--tile teaser--discussion">
+
+  {% include '@demo/02-atoms/image/image--teaser--discussion.twig' %}
+
+  <div class="teaser__body">
+    <div class="teaser__content">
+      <h4 class="teaser__title"><a href="{{ url }}">{{ title }}</a></h4>
+
+      <div class="teaser__content-line">
+        <svg class="teaser__content-type-icon">
+          <use xlink:href="#icon-account_circle"></use>
+        </svg>
+        <div class="teaser__content-text">
+          <div class="teaser__published">
+            <div class="teaser__published-date">{{ date }} &bullet; </div>
+            <div class="teaser__published-author">
+              <a title="View user profile." href="#">{{ author }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card__actionbar">
+
+      <a href="#" class="badge badge--pill badge-default teaser__badge">
+        <span class="badge__container">
+          <svg class="badge__icon">
+              <use xlink:href="#icon-comment"></use>
+            </svg>
+            <span class="badge__label">{{ comment_count }}</span>
+        </span>
+      </a>
+
+      {% include '@demo/02-atoms/cta/cta.twig' %}
+
+    </div>
+
+  </div>
+
+</div>
