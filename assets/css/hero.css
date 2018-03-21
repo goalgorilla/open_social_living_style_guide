@@ -1,0 +1,82 @@
+.cover {
+  color: white;
+  background: linear-gradient(59deg, #29abe2 0%, #1f80aa 75%);
+}
+
+.cover-img {
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.hero__bgimage-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(59deg, rgba(31, 128, 170, 0.1) 0%, rgba(31, 128, 170, 0.7) 100%);
+}
+
+.page-title {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hero-avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.hero-canvas {
+  border-radius: 5px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+}
+
+.hero-form[role='search'] .form-control {
+  border-radius: 5px;
+}
+
+.hero-form[role='search'] .form-control:focus, .hero-form[role='search'] .form-control:active,
+.hero-form[role='search'] .form-control:focus ~ .search-icon,
+.hero-form[role='search'] .form-control:active ~ .search-icon {
+  border-bottom: 1px solid #1f80aa;
+  box-shadow: 0 2px 0 0 #1f80aa;
+}
+
+.hero-form[role='search'] .form-submit,
+.hero-form[role='search'] .search-icon {
+  border-radius: 0 5px 5px 0;
+}
+
+.hero-form[role='search'] .search-icon {
+  fill: #29abe2;
+  background: white;
+}
+
+.hero .cover-wrap {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.hero .cover-wrap .hero-footer {
+  padding: 0 0 1rem;
+}
+
+.hero .cover-wrap .page-title {
+  padding-top: 0;
+}
+
+.node_type {
+  font-weight: 500;
+  display: inline-block;
+  color: white;
+}
+
+@media (min-width: 600px) {
+
+  .hero-avatar {
+    border-width: 3px;
+  }
+}

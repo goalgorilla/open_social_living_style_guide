@@ -1,0 +1,8 @@
+{
+  "group_operations_url": "/group/ID/edit",
+  "button_join": "Join",
+  "button_joined": "Joined",
+  "button_leave": "Leave group",
+  "cta": "Invitation only",
+  "styleguide": true
+}

@@ -1,0 +1,62 @@
+{{ attach_library('socialbase/hero')}}
+{{ attach_library('demo/hero--event')}}
+
+{%
+set cover_classes = [
+  'cover',
+  'hero--event'
+]
+%}
+
+{% if hero_styled_image_url %}
+  <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
+{% else %}
+  <div {{ attributes.addClass(cover_classes) }}>
+{% endif %}
+  <div class="hero__bgimage-overlay"></div>
+  {% if node_edit_url %}
+    <div class="hero-action-button">
+      <a href="{{ node_edit_url }}" title="{% trans %}Edit content{% endtrans %}" class="waves-effect waves-light btn btn-raised btn-default btn-floating">
+        <svg class="icon-gray icon-medium">
+          <use xlink:href="#icon-edit"></use>
+        </svg>
+      </a>
+    </div>
+  {% endif %}
+  <div class="cover-wrap container">
+
+    {% if styleguide %}
+      {% if node_type %}
+        <div class="node_type">
+          {{ node_type }}
+        </div>
+      {% endif %}
+    {% endif %}
+
+    {% if title %}
+      <h1 class="page-title">{{ title }}</h1>
+    {% endif %}
+
+    {% if styleguide %}
+      <div class="hero-footer">
+        <div class="hero-footer__text">what should be here?</div>
+        <div class="hero-footer__cta">
+          <div class="btn-group">
+            {% include '@demo/02-atoms/button/button--enroll.twig' %}
+          </div>
+        </div>
+      </div>
+      {% elseif event_enrollment %}{# drupal #}
+      <div class="hero-footer">
+        <div class="hero-footer__text"></div>
+        <div class="hero-footer__cta">
+          <div class="btn-group">
+            {{ event_enrollment }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+
+</div>

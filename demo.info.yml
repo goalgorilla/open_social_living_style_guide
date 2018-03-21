@@ -1,0 +1,121 @@
+name: Demo theme
+description: KSSNode meets SocialBlue with a twist
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core: 8.x
+
+libraries-extend:
+  socialbase/base:
+    - demo/base
+  socialbase/alert:
+    - demo/alert
+  socialbase/badge:
+    - demo/badge
+  socialbase/button:
+    - demo/button
+  socialbase/cards:
+    - demo/cards
+  socialbase/form-controls:
+    - demo/form-controls
+  social_gtranslate/gtranslate:
+    - demo/gtranslate
+  socialbase/list:
+    - demo/list
+  socialbase/spinner:
+    - demo/spinner
+  # Extend molecules
+  socialbase/breadcrumb:
+    - demo/breadcrumb
+  socialbase/dropdown:
+    - demo/dropdown
+  socialbase/file:
+      - demo/file
+  socialbase/form-elements:
+    - demo/form-elements
+  socialbase/form--input-groups:
+    - demo/form--input-groups
+  socialbase/like:
+    - demo/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - demo/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - demo/form--timepicker
+  socialbase/form--password:
+    - demo/form--password
+  socialbase/pagination:
+    - demo/pagination
+  socialbase/paragraphs.widget:
+    - demo/paragraphs.widget
+  socialbase/popover:
+    - demo/popover
+  socialbase/nav-book:
+    - demo/nav-book
+  socialbase/nav-tabs:
+    - demo/nav-tabs
+  socialbase/navbar:
+    - demo/navbar
+  socialbase/teaser:
+    - demo/teaser
+  socialbase/tour:
+    - demo/tour
+  # Extend Organisms
+  socialbase/comment:
+    - demo/comment
+  socialbase/hero:
+    - demo/hero
+  socialbase/message:
+    - demo/message
+  socialbase/meta:
+    - demo/meta
+  socialbase/modal:
+    - demo/modal
+  socialbase/offcanvas:
+    - demo/offcanvas
+  socialbase/stream:
+    - demo/stream
+  socialbase/layout:
+    - demo/layout
+  socialbase/page-node:
+    - demo/page-node
+
+
+  # social_ contrib modules
+  social_landing_page/section.block:
+    - demo/paragraph-block
+  social_landing_page/section.hero:
+    - demo/paragraph-hero
+  social_landing_page/featured:
+    - demo/paragraph-featured
+  social_landing_page/section.featured:
+    - demo/paragraph-featured
+  social_landing_page/section.introduction:
+    - demo/paragraph-introduction
+
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  demo:
+    paths:
+      - components
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer

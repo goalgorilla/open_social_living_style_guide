@@ -1,0 +1,28 @@
+// Hero Event
+//
+// markup: hero--event.twig
+//
+// Weight: 1
+//
+// Style guide: organisms.hero.event
+
+
+@import "settings";
+
+.hero--event {
+
+  .cover-wrap {
+    justify-content: flex-end;
+
+    .hero-footer {
+      padding: 0 0 1rem;
+    }
+
+    .page-title {
+      padding-top: 0;
+    }
+
+  }
+
+
+}

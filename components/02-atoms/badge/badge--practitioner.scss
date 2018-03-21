@@ -1,0 +1,30 @@
+@import 'settings';
+
+// Markup: badge--practitioner.twig
+//
+// Weight: 1
+//
+// style guide: atoms.badge.practitioner
+
+
+.badge--practitioner {
+  color: $brand-secondary;
+  background: white;
+
+  svg {
+    margin-right: 0.25rem;
+  }
+}
+
+.practitioner_icon {
+  background: white;
+  border-radius: 50%;
+  @include z-depth-2;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0.35rem;
+  right: 0.75rem;
+  text-align: center;
+  line-height: 32px;
+}

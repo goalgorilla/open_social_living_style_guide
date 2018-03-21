@@ -1,0 +1,13 @@
+{{ attach_library('demo/image--teaser')}}
+
+<div class="teaser__image">
+
+  {% embed "node--teaser__type.html.twig" %}
+    {%- block card_teaser_type -%} event {%- endblock -%}
+  {% endembed %}
+
+  <a href="{{ url }}">
+    {{ image }}
+  </a>
+
+</div>

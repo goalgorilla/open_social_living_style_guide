@@ -1,0 +1,16 @@
+{
+  "profile_name": "Michelle Clark",
+  "function": "General Manager",
+  "organization": "Open Social HQ",
+  "profile_hero_styled_image_url": "http://placeimg.com/1200/423/arch",
+  "imagePath": "http://placeimg.com/240/240/people",
+  "image": "<img src=http://placeimg.com/240/240/people class=img-responsive>",
+  "profile_contact_url": "user/ID/information",
+  "profile_edit_url": "/user/ID/edit",
+  "profile_edit_url_title": "{% trans %}Edit profile information{% endtrans %}",
+  "theme_pract": "Monitoring",
+  "country_pract": "Thailand",
+  "region_pract": "Asia",
+  "function_pract": "Rule of Law",
+  "styleguide": true
+}

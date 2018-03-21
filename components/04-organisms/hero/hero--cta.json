@@ -1,0 +1,36 @@
+{
+  "title": "Hero cta title with multiple words",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "hero_styled_image_url": "http://placeimg.com/1200/423/tech",
+  "styleguide": true,
+  "button": [
+      {
+        "class": "btn-default",
+        "style": "Default style",
+        "logged_in": true,
+        "button_link_lu": "Button LU",
+        "button_link_an": "Button AN"
+      },
+      {
+        "class": "btn-primary",
+        "style": "Primary style",
+        "logged_in": true,
+        "button_link_lu": "Button LU",
+        "button_link_an": "Button AN"
+      },
+      {
+        "class": "btn-accent",
+        "style": "Accent style",
+        "logged_in": true,
+        "button_link_lu": "Button LU",
+        "button_link_an": "Button AN"
+      },
+      {
+        "class": "btn-flat",
+        "style": "Flat style",
+        "logged_in": true,
+        "button_link_lu": "Button LU",
+        "button_link_an": "Button AN"
+      }
+    ]
+}

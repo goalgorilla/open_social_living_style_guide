@@ -1,0 +1,32 @@
+{{ attach_library('socialbase/hero') }}
+{{ attach_library('demo/hero--cta') }}
+
+{%
+  set cover_classes = [
+  'paragraph--' ~ paragraph.bundle|clean_class,
+  'cover',
+  'hero--cta'
+]
+%}
+
+{% if hero_styled_image_url %}
+  <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
+{% else %}
+  <div {{ attributes.addClass(cover_classes) }}>
+{% endif %}
+<div class="hero__bgimage-overlay"></div>
+  <div class="cover-wrap container">
+    <header class="page-title">
+      <h2>{{ title }}</h2>
+    </header>
+    <footer class="hero-footer">
+
+      {% if styleguide %}
+        {% include '@demo/03-molecules/paragraph-button/paragraph--button--default.twig' %}
+      {% else %}
+        {{ buttons }}
+      {% endif %}
+
+    </footer>
+  </div>
+</div>

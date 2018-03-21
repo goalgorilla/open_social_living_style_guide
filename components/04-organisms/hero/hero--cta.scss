@@ -1,0 +1,70 @@
+// Hero Cta
+//
+// markup: hero--cta.twig
+//
+// Weight: 1
+//
+// Style guide: organisms.hero.cta
+
+
+@import "settings";
+
+.paragraph--cta-banner {
+  height: 400px;
+
+  @media(min-width: 1200px) {
+    .paragraph--section & {
+      margin-left: calc(-100vw / 2 + #{1200px} / 2);
+      margin-right: calc(-100vw / 2 + #{1200px} / 2);
+    }
+  }
+
+  .cover-wrap {
+    justify-content: center;
+    min-height: 400px;
+  }
+
+  .hero__bgimage-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    background-image: linear-gradient(90deg,$brand-secondary 40%, $brand-secondary 80%);
+  }
+
+  .page-title {
+    padding-bottom: 2rem;
+
+    h2 {
+      margin: 0;
+      text-align: center;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn {
+    padding: 1rem 1rem;
+  }
+
+  .btn-flat {
+    border: 2px solid white;
+    color: white;
+  }
+
+  .btn-default {
+    color: $brand-secondary;
+  }
+
+  .hero-footer {
+    padding-bottom: 0;
+    justify-content: center;
+
+    @include for-tablet-landscape-up {
+      //justify-content: flex-end;
+    }
+
+  }
+}

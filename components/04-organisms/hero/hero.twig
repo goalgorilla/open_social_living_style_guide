@@ -1,0 +1,55 @@
+{{ attach_library('socialbase/hero')}}
+{{ attach_library('social_landing_page/section.hero')}}
+{{ attach_library('demo/paragraph-hero')}}
+
+{%
+set cover_classes = [
+  'paragraph--' ~ paragraph.bundle|clean_class,
+  'cover',
+  'cover--landing',
+  'hero',
+]
+%}
+
+{% if hero_styled_image_url %}
+  <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
+{% else %}
+  <div {{ attributes.addClass(cover_classes) }}>
+{% endif %}
+<div class="hero__bgimage-overlay"></div>
+  {% if node_edit_url %}
+    <div class="hero-action-button">
+      <a href="{{ node_edit_url }}" title="{% trans %}Edit content{% endtrans %}" class="waves-effect waves-light btn btn-raised btn-default btn-floating">
+        <svg class="icon-gray icon-medium">
+          <use xlink:href="#icon-edit"></use>
+        </svg>
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="cover-wrap container">
+
+    <div class="cover-small">
+    {% if title %}
+      <h1 class="page-title">{{ title }}</h1>
+    {% endif %}
+
+    {% if subtitle %}
+      <h3 class="page-subtitle">{{ subtitle }}</h3>
+    {% endif %}
+
+    <footer class="hero-footer">
+
+      {% if styleguide %}
+        {% include '@demo/03-molecules/paragraph-button/paragraph--button--default.twig' %}
+      {% else %}
+        {{ buttons }}
+      {% endif %}
+
+    </footer>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,60 @@
+{{ attach_library('socialbase/hero')}}
+{{ attach_library('demo/hero--profile')}}
+
+{%
+set cover_classes = [
+'cover',
+'hero--profile'
+]
+%}
+
+{% if hero_styled_image_url %}
+  <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
+{% else %}
+  <div {{ attributes.addClass(cover_classes) }}>
+{% endif %}
+  <div class="hero__bgimage-overlay"></div>
+  {% if profile_edit_url %}
+    <div class="hero-action-button">
+      <a href="{{ profile_edit_url }}" title="Edit profile information" class="btn btn-raised btn-default btn-floating">
+        <svg class="icon-gray icon-medium">
+          <use xlink:href="#icon-edit"></use>
+        </svg>
+      </a>
+    </div>
+  {% endif %}
+  <div class="cover-wrap container">
+
+  <header>
+
+      <h1 class="page-title">
+        {{ profile_name }}
+      </h1>
+
+    {% include '@demo/02-atoms/image/image--profile.twig' %}
+
+    {% if theme_pract|render or country_pract|render or region_pract|render or function_pract|render %}
+      {% include '@demo/02-atoms/badge/badge--practitioner.twig' %}
+    {% endif %}
+
+  </header>
+
+  {% if (function|render or organization|render) %}
+    <footer class="hero-footer">
+      <div class="hero-footer__text">
+        {% if function|render %}
+          <strong>{{ function|render }}</strong>
+        {% endif %}
+        {% if (function|render and organization|render) %}
+          &nbsp;-&nbsp;
+        {% endif %}
+        {% if organization|render %}
+          {{ organization|render }}
+        {% endif %}
+      </div>
+    </footer>
+  {% endif %}
+
+  </div>
+
+</div>

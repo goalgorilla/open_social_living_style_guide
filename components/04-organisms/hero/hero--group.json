@@ -1,0 +1,19 @@
+{
+  "label": "Hero group title with multiple words",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "group_hero_styled_image_url": "http://placeimg.com/1200/423/people",
+  "group_edit_url": "/group/ID/edit",
+  "group_edit_url_title": "Edit group",
+  "group_operations_url": "/group/ID/edit",
+  "group_location": "Amsterdam",
+  "group_address": "23 Street",
+  "group_members": "6",
+  "closed_group": "Closed group",
+  "members": "6 members",
+  "button_join": "Join",
+  "button_joined": "Joined",
+  "button_leave": "Leave group",
+  "cta": "CTA",
+  "button": "Join",
+  "styleguide": true
+}

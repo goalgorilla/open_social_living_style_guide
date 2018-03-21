@@ -1,0 +1,10 @@
+{
+  "title": "Hero title with multiple words",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "hero_styled_image_url": "http://placeimg.com/1200/423/animals",
+  "node_edit_url": "/node/ID/edit",
+  "node_edit_url_title": "Edit content",
+  "topic_type": "guidance manuals",
+  "node_type": "Topic",
+  "styleguide": true
+}

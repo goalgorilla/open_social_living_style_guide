@@ -1,0 +1,32 @@
+{
+  "button": [
+    {
+      "class": "btn-default",
+      "style": "Default style",
+      "logged_in": true,
+      "button_link_lu": "Button LU",
+      "button_link_an": "Button AN"
+    },
+    {
+      "class": "btn-primary",
+      "style": "Primary style",
+      "logged_in": true,
+      "button_link_lu": "Button LU",
+      "button_link_an": "Button AN"
+    },
+    {
+      "class": "btn-accent",
+      "style": "Accent style",
+      "logged_in": true,
+      "button_link_lu": "Button LU",
+      "button_link_an": "Button AN"
+    },
+    {
+      "class": "btn-flat",
+      "style": "Flat style",
+      "logged_in": true,
+      "button_link_lu": "Button LU",
+      "button_link_an": "Button AN"
+    }
+  ]
+}

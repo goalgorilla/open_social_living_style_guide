@@ -1,0 +1,31 @@
+// Teaser profile
+//
+// markup: teaser--profile.twig
+//
+// Weight: 1
+//
+// Style guide: molecules.teaser.profile
+
+@import 'settings';
+
+.teaser--profile {
+
+  .teaser__content {
+    padding: 0 2rem 1rem;
+  }
+
+  .teaser__title {
+    text-align: center;
+  }
+
+  .teaser__content-type-icon {
+    margin-right: 0.25rem;
+  }
+
+  .card__actionbar {
+    padding: 2rem 2rem 1.5rem;
+  }
+
+}
+
+

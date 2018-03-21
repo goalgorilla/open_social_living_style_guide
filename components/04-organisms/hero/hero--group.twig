@@ -1,0 +1,90 @@
+{{ attach_library('socialbase/hero')}}
+{{ attach_library('demo/hero--group')}}
+
+{%
+set cover_classes = [
+  'cover',
+  'hero--group'
+]
+%}
+
+{% if hero_styled_image_url %}
+  <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
+{% else %}
+  <div {{ attributes.addClass(cover_classes) }}>
+{% endif %}
+  <div class="hero__bgimage-overlay"></div>
+  {% if group_edit_url %}
+    <div class="hero-action-button">
+      <a href="{{ group_edit_url }}" title="{% trans %}Edit group{% endtrans %}" class="waves-effect waves-light btn btn-raised btn-default btn-floating">
+        <svg class="icon-gray icon-medium">
+          <use xlink:href="#icon-edit"></use>
+        </svg>
+      </a>
+    </div>
+  {% endif %}
+  <div class="cover-wrap container">
+
+    <header class="page-title">
+
+      <h1>{{ label }}</h1>
+
+      <p>
+      {% if styleguide %}
+
+          <span>{{ closed_group }}</span> &bullet;
+          <span>{{ members }}</span>
+
+      {% else %}
+
+        {% include '@demo/02-atoms/badge/badge--group-status.twig' %}
+        {% include '@demo/02-atoms/badge/badge--group-members.twig' %}
+
+      {% endif %}
+
+      </p>
+
+    </header>
+
+    <footer class="hero-footer">
+
+      <div class="hero-footer__text">
+        {% if group_location|render is not empty and group_address|render is not empty %}
+          <svg class="hero-footer-icon">
+            <use xlink:href="#icon-location"></use>
+          </svg>
+        {% endif %}
+        <span class="inline-center">
+        {{ group_location }}
+          {% if group_location|render is not empty and group_address|render is not empty %} &bullet;{% endif %}
+          {{ group_address }}
+        </span>
+      </div>
+
+      {% if group_operations_url %}
+        <div class="hero-footer__cta">
+          <div class="btn-group">
+
+          {% if styleguide %}
+
+          <button type="button" class="btn btn-accent btn-lg btn-raised dropdown-toggle">{{ button_join }}<span class="caret"></span></button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="{{ group_operations_url }}">{{ button_leave }}</a></li>
+          </ul>
+
+          {% else %}
+
+           {% include '@demo/02-atoms/button/button--join.twig' %}
+
+          {% endif %}
+
+          </div>
+
+        </div>
+      {% endif %}
+
+    </footer>
+
+  </div>
+
+</div>

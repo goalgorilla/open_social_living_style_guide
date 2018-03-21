@@ -1,0 +1,15 @@
+.teaser--profile .teaser__content {
+  padding: 0 2rem 1rem;
+}
+
+.teaser--profile .teaser__title {
+  text-align: center;
+}
+
+.teaser--profile .teaser__content-type-icon {
+  margin-right: 0.25rem;
+}
+
+.teaser--profile .card__actionbar {
+  padding: 2rem 2rem 1.5rem;
+}

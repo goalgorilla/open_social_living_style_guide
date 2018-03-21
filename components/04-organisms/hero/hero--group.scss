@@ -1,0 +1,28 @@
+// Hero Group
+//
+// markup: hero--group.twig
+//
+// Weight: 1
+//
+// Style guide: organisms.hero.group
+
+
+@import "settings";
+
+.hero--group {
+
+  .cover-wrap {
+    justify-content: flex-end;
+
+    .hero-footer {
+      padding: 0 0 1rem;
+    }
+
+    .page-title {
+      padding-top: 0;
+    }
+
+  }
+
+
+}

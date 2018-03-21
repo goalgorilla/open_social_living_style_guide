@@ -1,0 +1,57 @@
+.paragraph--cta-banner {
+  height: 400px;
+}
+
+.paragraph--cta-banner .cover-wrap {
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 400px;
+}
+
+.paragraph--cta-banner .hero__bgimage-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .8;
+  background-image: linear-gradient(90deg, #1f80aa 40%, #1f80aa 80%);
+}
+
+.paragraph--cta-banner .page-title {
+  padding-bottom: 2rem;
+}
+
+.paragraph--cta-banner .page-title h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.paragraph--cta-banner .btn {
+  padding: 1rem 1rem;
+}
+
+.paragraph--cta-banner .btn-flat {
+  border: 2px solid white;
+  color: white;
+}
+
+.paragraph--cta-banner .btn-default {
+  color: #1f80aa;
+}
+
+.paragraph--cta-banner .hero-footer {
+  padding-bottom: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+@media (min-width: 1200px) {
+
+  .paragraph--section .paragraph--cta-banner {
+    margin-left: calc(-100vw / 2 + 1200px / 2);
+    margin-right: calc(-100vw / 2 + 1200px / 2);
+  }
+}

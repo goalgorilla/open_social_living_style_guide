@@ -1,0 +1,10 @@
+{% if joined %}
+  <button type="button" autocomplete="off" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-accent btn-lg btn-raised dropdown-toggle">{% trans %}Joined{% endtrans %}<span class="caret"></span></button>
+  <ul class="dropdown-menu dropdown-menu-right">
+    <li><a href="{{ group_operations_url }}">{% trans %}Leave group{% endtrans %}</a></li>
+  </ul>
+{% elseif closed_group %}
+  <a href="{{ group_operations_url }}" class="btn btn-accent btn-lg btn-raised dropdown-toggle disabled" title="{{ cta }}">{{ cta }}</a>
+{% else %}
+  <a href="{{ group_operations_url }}" class="btn btn-accent btn-lg btn-raised dropdown-toggle" title="Join">{% trans %}Join{% endtrans %}</a>
+{% endif %}

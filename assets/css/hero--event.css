@@ -1,0 +1,12 @@
+.hero--event .cover-wrap {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.hero--event .cover-wrap .hero-footer {
+  padding: 0 0 1rem;
+}
+
+.hero--event .cover-wrap .page-title {
+  padding-top: 0;
+}

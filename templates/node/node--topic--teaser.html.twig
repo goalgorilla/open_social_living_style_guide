@@ -1,0 +1,21 @@
+{% if node.label %}
+  {% set teaser_title = node.label %}
+{% endif %}
+
+{% if content.field_topic_image %}
+  {% set teaser_image = content.field_topic_image %}
+{% endif %}
+
+{% if content.group_name %}
+  {% set group_name = content.group_name %}
+{% endif %}
+
+{% include '@demo/03-molecules/teaser/teaser--topic.twig'
+
+  with {
+    title: teaser_title,
+    image: teaser_image,
+    group_name: group_name
+  }
+
+%}

@@ -1,0 +1,57 @@
+{{ attach_library('socialbase/teaser') }}
+
+<div class="card teaser">
+
+  {% include '@demo/02-atoms/image/image--teaser.twig' %}
+
+  <div class="teaser__body">
+    <div class="teaser__content">
+      <h4 class="teaser__title"><a href="{{ url }}">{{ title }}</a></h4>
+
+      {% block card_body %}
+
+      <div class="teaser__content-line">
+        <svg class="teaser__content-type-icon">
+          <use xlink:href="#icon-account_circle"></use>
+        </svg>
+        <div class="teaser__content-text">
+          <div class="teaser__published">
+            <div class="teaser__published-author">
+              <a title="View user profile." href="#">{{ author }}</a>
+            </div>
+            <div class="teaser__published-date"> &bullet; {{ date }} </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teaser__content-line">
+        <svg class="teaser__content-type-icon">
+          <use xlink:href="#icon-event"></use>
+        </svg>
+        <div class="teaser__content-text">{{ topic_type }}</div>
+      </div>
+
+      <div class="teaser__content-line">
+        <svg class="teaser__content-type-icon">
+          <use xlink:href="#icon-group"></use>
+        </svg>
+        <div class="teaser__content-text">{{ group_name }}</div>
+      </div>
+
+      {% endblock %}
+
+    </div>
+
+    <div class="card__actionbar">
+
+      {% include '@demo/02-atoms/comment/comment-count.twig' %}
+
+      {% include '@demo/02-atoms/visibility/visibility.twig' %}
+
+      {% include '@demo/02-atoms/cta/cta.twig' %}
+
+    </div>
+
+  </div>
+
+</div>
