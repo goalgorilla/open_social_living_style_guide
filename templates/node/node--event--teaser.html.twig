@@ -1,0 +1,30 @@
+{% if node.label %}
+  {% set teaser_title = node.label %}
+{% endif %}
+
+{% if content.field_event_image %}
+  {% set teaser_image = content.field_event_image %}
+{% endif %}
+
+{% if content.group_name %}
+  {% set group_name = content.group_name %}
+{% endif %}
+
+{% if content.field_event_timezone %}
+  {% set event_timezone = content.field_event_timezone %}
+{% endif %}
+
+{% if content.field_event_location %}
+  {% set event_location = content.field_event_location %}
+{% endif %}
+
+{% if content.enrolled %}
+  {% set enrolled = content.enrolled %}
+{% endif %}
+
+{% include '@demo/03-molecules/teaser/teaser-tile--event.twig'
+  with {
+    title: teaser_title,
+    image: teaser_image
+  }
+%}

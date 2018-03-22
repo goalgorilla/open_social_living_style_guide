@@ -1,8 +1,8 @@
 {
   "title": "Teaser title with multiple words that should just keep wrapping no matter how long it is",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "imagePath": "http://placeimg.com/376/178/nature",
-  "image": "<img src=http://placeimg.com/376/178/nature class=img-responsive>",
+  "imagePath": "http://placeimg.com/220/220/nature",
+  "image": "<img src=http://placeimg.com/220/220/nature class=img-responsive>",
   "author": "Michelle Clark",
   "date": "29 Jan 2017",
   "topic_type": "Blog",

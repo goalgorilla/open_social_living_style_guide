@@ -205,11 +205,9 @@ options.styleGuide = {
     'kss-assets/css/hero.css',
     'kss-assets/css/hero--cta.css',
     'kss-assets/css/hero--event.css',
-    'kss-assets/css/hero--discussion.css',
     'kss-assets/css/hero--group.css',
     'kss-assets/css/hero--profile.css',
     'kss-assets/css/hero--topic.css',
-    'kss-assets/css/hero--workspace.css',
 
 
     'kss-assets/base/meta.css',
@@ -316,16 +314,7 @@ gulp.task('build-styleguide', function(done) {
 // Copy drupal scripts from drupal to make them available for the styleguide
 gulp.task('scripts-drupal', function() {
   return gulp.src([
-    options.rootPath.drupal + 'assets/vendor/domready/ready.min.js',
-    options.rootPath.drupal + 'assets/vendor/jquery/jquery.min.js',
-    options.rootPath.drupal + 'assets/vendor/jquery-once/jquery.once.min.js',
-    options.rootPath.drupal + '/misc/drupalSettingsLoader.js',
-    options.rootPath.drupal + '/misc/drupal.js',
-    options.rootPath.drupal + '/misc/debounce.js',
-    options.rootPath.drupal + '/misc/forms.js',
-    options.rootPath.drupal + '/misc/tabledrag.js',
-    options.rootPath.drupal + '/modules/user/user.js',
-    options.rootPath.drupal + '/modules/file/file.js'
+
   ])
     .pipe( concat('drupal-core.js') )
     .pipe( gulp.dest(options.rootPath.styleGuide + 'kss-assets/') );
@@ -342,7 +331,7 @@ gulp.task('scripts-drupal', function() {
 gulp.task('watch', ['styles', 'watch:styleguide', 'icons-watch', 'watch:js'], function () {
 
   browserSync.init({
-    proxy: "social.test:[CHANGE-THIS]"
+    proxy: "social.test:32774"
   });
 
   gulp.watch(options.theme.components + '**/*.scss', ['styles']);

@@ -124,11 +124,6 @@ form--timepicker:
     theme:
       assets/css/timepicker.css: {}
 
-goals:
-  css:
-    theme:
-      assets/css/goals.css: {}
-
 like:
   css:
     theme:
@@ -223,14 +218,6 @@ teaser:
       assets/css/teaser.css: {}
   dependencies:
     - demo/image--teaser
-
-teaser--profile:
-  css:
-    theme:
-      assets/css/teaser--profile.css: {}
-  dependencies:
-    - demo/teaser
-    - demo/image--profile
 
 tour:
   css:

@@ -1,16 +1,6 @@
-// Teaser
-//
-// markup: teaser.twig
-//
-// Weight: 1
-//
-// Style guide: molecules.teaser
-
 // Teaser event
 //
 // markup: teaser--event.twig
-//
-// Weight: 2
 //
 // Style guide: molecules.teaser.event
 
@@ -18,16 +8,18 @@
 //
 // markup: teaser--topic.twig
 //
-// Weight: 2
-//
 // Style guide: molecules.teaser.topic
 
 // Teaser group
 //
 // markup: teaser--group.twig
 //
-// Weight: 2
-//
 // Style guide: molecules.teaser.group
+
+// Teaser profile
+//
+// markup: teaser--profile.twig
+//
+// Style guide: molecules.teaser.profile
 
 @import 'settings';

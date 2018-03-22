@@ -1,0 +1,26 @@
+{% if content.field_group_image %}
+  {% set teaser_image = content.field_group_image %}
+{% endif %}
+
+{% if content.group_name %}
+  {% set group_name = content.group_name %}
+{% endif %}
+
+{% if content.field_group_location %}
+  {% set group_location = content.field_group_location %}
+{% endif %}
+
+{% if content.field_group_address %}
+  {% set group_address = content.field_group_address %}
+{% endif %}
+
+{% include '@demo/03-molecules/teaser/teaser-tile--group.twig'
+
+  with {
+    image: teaser_image,
+    group_name: group_name,
+    group_location: group_location,
+    group_address: group_address
+  }
+
+%}

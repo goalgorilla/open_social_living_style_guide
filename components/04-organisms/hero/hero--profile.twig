@@ -33,10 +33,6 @@ set cover_classes = [
 
     {% include '@demo/02-atoms/image/image--profile.twig' %}
 
-    {% if theme_pract|render or country_pract|render or region_pract|render or function_pract|render %}
-      {% include '@demo/02-atoms/badge/badge--practitioner.twig' %}
-    {% endif %}
-
   </header>
 
   {% if (function|render or organization|render) %}
