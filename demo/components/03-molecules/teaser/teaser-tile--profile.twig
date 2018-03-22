@@ -1,0 +1,35 @@
+{{ attach_library('socialbase/teaser')}}
+{{ attach_library('demo/teaser--profile')}}
+
+<div class="card teaser teaser--tile teaser--profile">
+
+  {% include '@demo/02-atoms/image/image--profile.twig' %}
+
+    <div class="teaser__content">
+
+      <h4 class="teaser__title"><a href="{{ profile_contact_url }}" rel="bookmark">{{ profile_name }}</a></h4>
+
+      {% if function|render or organization|render %}
+        <div class="teaser__profile-function">
+          <svg class="teaser__content-type-icon">
+            <use xlink:href="#icon-business_center"></use>
+          </svg>
+          <span class="teaser__content-text">
+            <strong>{{ function }}</strong>
+            {% if organization %}
+              -
+              {{ organization }}
+            {% endif %}
+            </span>
+        </div>
+      {% endif %}
+
+    </div>
+
+  <div class="card__actionbar">
+    <a href="{{ profile_contact_url }}" class="card__link" title="{{ name }}">
+      View profile
+    </a>
+  </div>
+
+</div>

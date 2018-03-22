@@ -1,0 +1,37 @@
+name: Demo theme
+description: KSSNode meets SocialBlue with a twist
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core: 8.x
+
+libraries-extend:
+  socialbase/teaser:
+    - demo/teaser
+
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  demo:
+    paths:
+      - components
+      - templates
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer
