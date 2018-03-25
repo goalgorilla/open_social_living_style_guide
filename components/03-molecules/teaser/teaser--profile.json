@@ -2,7 +2,9 @@
   "profile_name": "Michelle Clark",
   "function": "General Manager",
   "organization": "Open Social HQ",
+  "profile_contact_label": "private_message",
   "profile_contact_url": "/user/ID/stream",
+  "profile_stream_url": "/user/ID/stream",
   "imagePath": "http://placeimg.com/240/240/people",
   "image": "<img src=http://placeimg.com/240/240/people class=img-responsive>"
 }

@@ -125,7 +125,6 @@ options.styleGuide = {
     'kss-assets/css/alert.css',
     'kss-assets/base/badge.css',
     'kss-assets/css/badge.css',
-    'kss-assets/css/badge--practitioner.css',
     'kss-assets/base/button.css',
     'kss-assets/css/button.css',
     'kss-assets/base/cards.css',
@@ -140,7 +139,6 @@ options.styleGuide = {
     'kss-assets/css/sharing.css',
     'kss-assets/css/waves.css',
     // Molecule stylesheets
-    'kss-assets/css/cta-button.css',
     'kss-assets/base/dropdown.css',
     'kss-assets/css/dropdown.css',
     'kss-assets/base/file.css',
@@ -192,7 +190,6 @@ options.styleGuide = {
     'kss-assets/css/taxonomy.css',
     'kss-assets/base/teaser.css',
     'kss-assets/css/teaser.css',
-    'kss-assets/css/teaser--profile.css',
     'kss-assets/base/tour.css',
     'kss-assets/css/tour.css',
     'kss-assets/css/user-list.css',
@@ -331,7 +328,7 @@ gulp.task('scripts-drupal', function() {
 gulp.task('watch', ['styles', 'watch:styleguide', 'icons-watch', 'watch:js'], function () {
 
   browserSync.init({
-    proxy: "social.test:32774"
+    proxy: "social.test:32769"
   });
 
   gulp.watch(options.theme.components + '**/*.scss', ['styles']);

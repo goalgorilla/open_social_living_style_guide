@@ -10,23 +10,7 @@
   {% set organization = content.field_profile_organization %}
 {% endif %}
 
-{% if content.field_profile_theme_pract %}
-  {% set theme_pract = content.field_profile_theme_pract %}
-{% endif %}
-
-{% if content.field_profile_country_pract %}
-  {% set country_pract = content.field_profile_country_pract %}
-{% endif %}
-
-{% if content.field_profile_region_pract %}
-  {% set region_pract = content.field_profile_region_pract %}
-{% endif %}
-
-{% if content.field_profile_function_pract %}
-  {% set function_pract = content.field_profile_function_pract %}
-{% endif %}
-
-{% include '@demo/03-molecules/teaser/teaser-tile--profile.twig'
+{% include '@demo/03-molecules/teaser/teaser--profile.twig'
 
   with {
     image: profile_image

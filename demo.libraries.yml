@@ -22,13 +22,6 @@ badge:
     theme:
       assets/css/badge.css: {}
 
-badge--practitioner:
-  css:
-    theme:
-      assets/css/badge--practitioner.css: {}
-  dependencies:
-    - demo/badge
-
 button:
   css:
     theme:
@@ -46,13 +39,6 @@ form-controls:
   css:
     theme:
       assets/css/form-controls.css: {}
-
-gtranslate:
-  css:
-    theme:
-      assets/css/gtranslate.css: {}
-  dependencies:
-    - demo/navbar
 
 image--teaser:
   css:

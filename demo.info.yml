@@ -1,5 +1,6 @@
 name: Demo theme
-description: KSSNode meets SocialBlue with a twist
+description: Example of custom subtheme integrated with KSSNode as a living
+styleguide
 screenshot: screenshot.png
 type: theme
 
@@ -20,8 +21,6 @@ libraries-extend:
     - demo/cards
   socialbase/form-controls:
     - demo/form-controls
-  social_gtranslate/gtranslate:
-    - demo/gtranslate
   socialbase/list:
     - demo/list
   socialbase/spinner:

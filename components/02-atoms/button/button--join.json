@@ -3,6 +3,5 @@
   "button_join": "Join",
   "button_joined": "Joined",
   "button_leave": "Leave group",
-  "cta": "Invitation only",
-  "styleguide": true
+  "cta": "Invitation only"
 }

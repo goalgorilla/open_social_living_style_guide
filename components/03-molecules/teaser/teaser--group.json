@@ -3,6 +3,7 @@
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "imagePath": "http://placeimg.com/220/220/nature",
   "image": "<img src=http://placeimg.com/220/220/nature class=img-responsive>",
+  "url": "/group/ID/stream",
   "group_location": "Amsterdam",
   "group_address": "23 Street",
   "joined": "{% trans %}Joined{% endtrans %}",

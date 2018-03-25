@@ -1,4 +1,5 @@
 {
-  "imagePath": "http://placeimg.com/376/178/nature",
-  "image": "<img src=http://placeimg.com/376/178/nature class=img-responsive>"
+  "imagePath": "http://placeimg.com/220/220/nature",
+  "image": "<img src=http://placeimg.com/220/220/nature class=img-responsive>",
+  "url": "/group/ID/stream"
 }
