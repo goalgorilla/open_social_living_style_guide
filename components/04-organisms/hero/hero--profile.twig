@@ -16,7 +16,7 @@ set cover_classes = [
   <div class="hero__bgimage-overlay"></div>
   {% if profile_edit_url %}
     <div class="hero-action-button">
-      <a href="{{ profile_edit_url }}" title="Edit profile information" class="btn btn-raised btn-default btn-floating">
+      <a href="{{ profile_edit_url }}" title="{% trans %}Edit profile information{% endtrans %}" class="btn btn-raised btn-default btn-floating">
         <svg class="icon-gray icon-medium">
           <use xlink:href="#icon-edit"></use>
         </svg>
@@ -27,11 +27,11 @@ set cover_classes = [
 
   <header>
 
+    {{ image }}
+
       <h1 class="page-title">
         {{ profile_name }}
       </h1>
-
-    {% include '@demo/02-atoms/image/image--profile.twig' %}
 
   </header>
 

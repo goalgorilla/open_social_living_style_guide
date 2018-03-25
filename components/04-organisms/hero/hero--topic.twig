@@ -7,7 +7,6 @@ set cover_classes = [
   'hero--topic'
 ]
 %}
-
 {% if hero_styled_image_url %}
   <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
 {% else %}
@@ -45,6 +44,16 @@ set cover_classes = [
     {% if title %}
       <h1 class="page-title">{{ title }}</h1>
     {% endif %}
+
+    <div class="hero-footer">
+
+      <div class="hero-footer__text">
+
+        Author, date and group should go here
+
+      </div>
+
+    </div>
 
   </div>
 

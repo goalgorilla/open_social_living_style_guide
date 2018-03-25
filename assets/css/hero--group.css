@@ -1,12 +1,7 @@
-.hero--group .cover-wrap {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.hero--group .cover-wrap .hero-footer {
+.hero--group .hero-footer {
   padding: 0 0 1rem;
 }
 
-.hero--group .cover-wrap .page-title {
+.hero--group .page-title {
   padding-top: 0;
 }

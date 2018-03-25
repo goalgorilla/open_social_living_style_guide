@@ -60,6 +60,11 @@ spinner:
     theme:
       assets/css/spinner.css: {}
 
+read-more:
+  css:
+    theme:
+      assets/css/read-more.css: {}
+
 waves:
   css:
     theme:

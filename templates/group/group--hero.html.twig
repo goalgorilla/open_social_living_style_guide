@@ -1,0 +1,23 @@
+{% if content.field_group_image %}
+  {% set hero_image = content.field_group_image %}
+{% endif %}
+
+{% if content.label %}
+  {% set label = content.label %}
+{% endif %}
+
+{% if content.field_group_location %}
+  {% set group_location = content.field_group_location %}
+{% endif %}
+
+{% if content.field_group_address %}
+  {% set group_address = content.field_group_address %}
+{% endif %}
+
+{% include '@demo/04-organisms/hero/hero--group.twig'
+
+  with {
+    image: hero_image
+  }
+
+%}

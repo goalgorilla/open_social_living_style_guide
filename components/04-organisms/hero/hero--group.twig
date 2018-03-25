@@ -7,7 +7,9 @@ set cover_classes = [
   'hero--group'
 ]
 %}
-
+{# this is a problem. Hero image isn't in URL form
+{{ image }}
+#}
 {% if hero_styled_image_url %}
   <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
 {% else %}
@@ -25,26 +27,17 @@ set cover_classes = [
   {% endif %}
   <div class="cover-wrap container">
 
-    <header class="page-title">
+    <p>
+    {% if styleguide %}
+      <span>{{ closed_group }}</span> &bullet;
+      <span>{{ members }}</span>
+    {% else %}
+      {% include '@demo/02-atoms/badge/badge--group-status.twig' %}
+      {% include '@demo/02-atoms/badge/badge--group-members.twig' %}
+    {% endif %}
+    </p>
 
-      <h1>{{ label }}</h1>
-
-      <p>
-      {% if styleguide %}
-
-          <span>{{ closed_group }}</span> &bullet;
-          <span>{{ members }}</span>
-
-      {% else %}
-
-        {% include '@demo/02-atoms/badge/badge--group-status.twig' %}
-        {% include '@demo/02-atoms/badge/badge--group-members.twig' %}
-
-      {% endif %}
-
-      </p>
-
-    </header>
+    <h1 class="page-title">{{ label }}</h1>
 
     <footer class="hero-footer">
 
@@ -54,11 +47,9 @@ set cover_classes = [
             <use xlink:href="#icon-location"></use>
           </svg>
         {% endif %}
-        <span class="inline-center">
         {{ group_location }}
           {% if group_location|render is not empty and group_address|render is not empty %} &bullet;{% endif %}
           {{ group_address }}
-        </span>
       </div>
 
       {% if group_operations_url %}

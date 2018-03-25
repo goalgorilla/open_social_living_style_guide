@@ -1,26 +1,9 @@
 .cover {
   color: white;
-  background: linear-gradient(59deg, #29abe2 0%, #1f80aa 75%);
-}
-
-.cover-img {
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-}
-
-.hero__bgimage-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(59deg, rgba(31, 128, 170, 0.1) 0%, rgba(31, 128, 170, 0.7) 100%);
 }
 
 .page-title {
   color: white;
-  font-family: 'Oswald', sans-serif;
 }
 
 .hero-avatar {
@@ -55,16 +38,11 @@
   background: white;
 }
 
-.hero .cover-wrap {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.hero .cover-wrap .hero-footer {
+.hero .hero-footer {
   padding: 0 0 1rem;
 }
 
-.hero .cover-wrap .page-title {
+.hero .page-title {
   padding-top: 0;
 }
 
@@ -72,6 +50,40 @@
   font-weight: 500;
   display: inline-block;
   color: white;
+}
+
+.hero__content {
+  -ms-flex: 1;
+      flex: 1;
+  padding: 20px;
+  position: relative;
+}
+
+.teaser__content-line {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  font-size: 0.875rem;
+}
+
+.teaser__content-type-icon {
+  width: 14px;
+  height: 14px;
+  -ms-flex: 0 0 14px;
+      flex: 0 0 14px;
+  line-height: 21px;
+  margin-top: 3px;
+  fill: #555555;
+  margin-right: 12px;
+}
+
+.teaser__content-text {
+  line-height: 21px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 @media (min-width: 600px) {

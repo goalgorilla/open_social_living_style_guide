@@ -20,3 +20,13 @@ note to self:
 
 
 
+Troubleshooting
+
+1. Not sure why the package isn't being replaced correctly. You'll 
+notice the function folder isn't present. I clones it directly 
+from here instead https://github
+.com/goalgorilla/twig-drupal-filters
+
+2. Understand what is compiling, and to where. If something isn't 
+displaying as expected, look for its absence to start ruling out factors in 
+the render process.

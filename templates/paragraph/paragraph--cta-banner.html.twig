@@ -1,0 +1,10 @@
+
+{% if content.field_cta_banner_title %}
+  {% set title = content.field_cta_banner_title %}
+{% endif %}
+
+{% if content.field_cta_banner_button %}
+  {% set buttons = content.field_cta_banner_button %}
+{% endif %}
+
+{% include '@demo/04-organisms/hero/hero--cta.twig'%}

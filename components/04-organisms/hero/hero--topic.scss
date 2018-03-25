@@ -11,36 +11,29 @@
 
 .hero--topic {
 
-  .cover-wrap {
-    justify-content: flex-end;
+  .hero-footer {
+    padding: 0 0 1rem;
+  }
 
-    .hero-footer {
-      padding: 0 0 1rem;
-    }
+  .page-title {
+    padding-top: 0;
+  }
 
-    .page-title {
-      padding-top: 0;
-    }
+  .topic_type {
+    font-weight: 500;
+  }
 
-    .topic_type {
-      font-weight: 500;
+  .hero__topic-type {
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    display: inline-block;
+  }
 
-      .hero__topic-type {
-        width: 18px;
-        height: 18px;
-        vertical-align: top;
-        display: inline-block;
-
-        .hero__topic-type-icon {
-          width: 18px;
-          height: 18px;
-          fill: white;
-        }
-
-      }
-
-    }
-
+  .hero__topic-type-icon {
+    width: 18px;
+    height: 18px;
+    fill: white;
   }
 
 }

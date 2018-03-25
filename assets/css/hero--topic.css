@@ -1,28 +1,23 @@
-.hero--topic .cover-wrap {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.hero--topic .cover-wrap .hero-footer {
+.hero--topic .hero-footer {
   padding: 0 0 1rem;
 }
 
-.hero--topic .cover-wrap .page-title {
+.hero--topic .page-title {
   padding-top: 0;
 }
 
-.hero--topic .cover-wrap .topic_type {
+.hero--topic .topic_type {
   font-weight: 500;
 }
 
-.hero--topic .cover-wrap .topic_type .hero__topic-type {
+.hero--topic .hero__topic-type {
   width: 18px;
   height: 18px;
   vertical-align: top;
   display: inline-block;
 }
 
-.hero--topic .cover-wrap .topic_type .hero__topic-type .hero__topic-type-icon {
+.hero--topic .hero__topic-type-icon {
   width: 18px;
   height: 18px;
   fill: white;

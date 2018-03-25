@@ -1,6 +1,5 @@
 name: Demo theme
-description: Example of custom subtheme integrated with KSSNode as a living
-styleguide
+description: Example custom subtheme integrated with KSSNode living styleguide
 screenshot: screenshot.png
 type: theme
 

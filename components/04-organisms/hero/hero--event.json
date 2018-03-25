@@ -6,5 +6,12 @@
   "node_edit_url_title": "Edit content",
   "node_type": "event",
   "button": "Enroll",
-  "styleguide": true
+  "styleguide": true,
+  "group_name": "Open Social Developers",
+  "event_timezone": "UTC",
+  "event_date": "May 26th, 2018",
+  "event_location": "Amsterdam",
+  "event_type": "Meetup",
+  "visibility_label": "community",
+  "visibility_icon": "community"
 }

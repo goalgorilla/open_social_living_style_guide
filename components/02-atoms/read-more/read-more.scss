@@ -8,6 +8,8 @@
 
 @import 'settings';
 
-.read-more {
-  color: $brand-primary;;
+.card__link {
+  color: $brand-primary;
+  text-transform: none;
+  text-decoration: underline;
 }

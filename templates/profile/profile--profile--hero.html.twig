@@ -1,0 +1,36 @@
+{% if content.field_profile_image %}
+  {% set profile_image = content.field_profile_image %}
+{% endif %}
+
+{% if content.field_profile_function %}
+  {% set function = content.field_profile_function %}
+{% endif %}
+
+{% if content.field_profile_organization %}
+  {% set organization = content.field_profile_organization %}
+{% endif %}
+
+{% if content.field_profile_theme_pract %}
+  {% set theme_pract = content.field_profile_theme_pract %}
+{% endif %}
+
+{% if content.field_profile_country_pract %}
+  {% set country_pract = content.field_profile_country_pract %}
+{% endif %}
+
+{% if content.field_profile_region_pract %}
+  {% set region_pract = content.field_profile_region_pract %}
+{% endif %}
+
+{% if content.field_profile_function_pract %}
+  {% set function_pract = content.field_profile_function_pract %}
+{% endif %}
+
+
+{% include '@demo/04-organisms/hero/hero--profile.twig'
+
+  with {
+    image: profile_image
+  }
+
+%}

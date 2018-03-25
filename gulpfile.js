@@ -129,14 +129,13 @@ options.styleGuide = {
     'kss-assets/css/button.css',
     'kss-assets/base/cards.css',
     'kss-assets/css/cards.css',
-    'kss-assets/css/cta.css',
     'kss-assets/base/form-controls.css',
     'kss-assets/css/form-controls.css',
     'kss-assets/css/image--profile.css',
     'kss-assets/css/image--teaser.css',
     'kss-assets/base/list.css',
     'kss-assets/css/list.css',
-    'kss-assets/css/sharing.css',
+    'kss-assets/css/read-more.css',
     'kss-assets/css/waves.css',
     // Molecule stylesheets
     'kss-assets/base/dropdown.css',
@@ -148,7 +147,6 @@ options.styleGuide = {
     'kss-assets/css/image-and-text.css',
     'kss-assets/base/datepicker.css',
     'kss-assets/css/datepicker.css',
-    'kss-assets/css/goals.css',
     'kss-assets/base/input-groups.css',
     'kss-assets/css/input-groups.css',
     'kss-assets/base/password.css',
@@ -328,7 +326,7 @@ gulp.task('scripts-drupal', function() {
 gulp.task('watch', ['styles', 'watch:styleguide', 'icons-watch', 'watch:js'], function () {
 
   browserSync.init({
-    proxy: "social.test:32769"
+    proxy: "social.test:32773"
   });
 
   gulp.watch(options.theme.components + '**/*.scss', ['styles']);

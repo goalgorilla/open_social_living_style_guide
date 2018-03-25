@@ -1,0 +1,21 @@
+{% if content.field_topic_type.value %}
+  {% set topic_type = content.field_topic_type %}
+{% endif %}
+
+{% if content.group_name %}
+  {% set group_name = content.group_name %}
+{% endif %}
+
+{% if node.bundle == 'event' %}
+
+  {% include '@demo/04-organisms/hero/hero--event.twig'%}
+
+{% elseif node.bundle == 'topic' %}
+
+  {% include '@demo/04-organisms/hero/hero--topic.twig'%}
+
+{% else %}
+
+  {% include '@demo/04-organisms/hero/hero.twig' %}
+
+{% endif %}

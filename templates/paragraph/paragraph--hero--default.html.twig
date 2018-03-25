@@ -1,0 +1,14 @@
+
+{% if content.field_hero_title %}
+  {% set title = content.field_hero_title %}
+{% endif %}
+
+{% if content.field_hero_subtitle %}
+  {% set subtitle = content.field_hero_subtitle %}
+{% endif %}
+
+{% if content.field_hero_buttons %}
+  {% set buttons = content.field_hero_buttons %}
+{% endif %}
+
+{% include '@demo/04-organisms/hero/hero.twig'%}
