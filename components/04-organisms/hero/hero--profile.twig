@@ -8,8 +8,8 @@ set cover_classes = [
 ]
 %}
 
-{% if hero_styled_image_url %}
-  <div style="background-image: url('{{ hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
+{% if profile_hero_styled_image_url %}
+  <div style="background-image: url('{{ profile_hero_styled_image_url }}')" {{ attributes.addClass(cover_classes, 'cover-img', 'cover-img-gradient') }}>
 {% else %}
   <div {{ attributes.addClass(cover_classes) }}>
 {% endif %}

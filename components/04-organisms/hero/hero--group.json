@@ -1,8 +1,8 @@
 {
   "label": "Hero group title with multiple words",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "hero_styled_image_url": "http://placeimg.com/1200/423/people",
-  "image": "<img src=http://placeimg.com/1200/423/people>",
+  "hero_styled_image_url": "http://placeimg.com/1200/423/arch",
+  "image": "<img src=http://placeimg.com/1200/423/arch>",
   "group_edit_url": "/group/ID/edit",
   "group_edit_url_title": "Edit group",
   "group_operations_url": "/group/ID/edit",

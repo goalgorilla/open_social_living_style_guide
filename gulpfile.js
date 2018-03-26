@@ -40,7 +40,6 @@ options.rootPath = {
   styleGuide      : __dirname + '/styleguide/',
   basetheme       : __dirname + '/../../../profiles/contrib/social/themes/socialbase/',
   drupal          : __dirname + '/../../../core/',
-  social          : __dirname + '/../../../modules/contrib/social_landing_page/'
 };
 
 options.theme = {
@@ -63,15 +62,6 @@ options.basetheme = {
   js         : options.rootPath.basetheme + 'assets/js/'
 };
 
-options.social = {
-  name       : 'social',
-  root       : options.rootPath.social,
-  components : options.rootPath.social + 'css/',
-  build      : options.rootPath.social + 'assets/',
-  css        : options.rootPath.social + 'assets/css/',
-  js         : options.rootPath.social + 'assets/js/'
-};
-
 // Define the node-sass configuration. The includePaths is critical!
 options.sass = {
   importer: importOnce,
@@ -82,7 +72,6 @@ options.sass = {
 };
 
 var sassFiles = [
-  //options.social.components + '*.scss',
   options.theme.components + '**/*.scss',
   // Do not open Sass partials as they will be included as needed.
   '!' + options.theme.components + '**/_*.scss'
@@ -105,7 +94,6 @@ options.styleGuide = {
   'source': [
     options.theme.components,
     options.basetheme.components,
-    //options.social.components
   ],
   'mask': /\.less|\.sass|\.scss|\.styl|\.stylus/,
   destination: options.rootPath.styleGuide,

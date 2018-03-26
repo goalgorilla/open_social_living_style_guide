@@ -652,6 +652,11 @@ pre[class*="language-"] code {
   cursor: help;
 }
 
+.container {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
 @media screen and (min-width: 501px) {
   #kss-node .kss-github {
     display: block;
@@ -702,6 +707,16 @@ pre[class*="language-"] code {
   }
   .back-to-top {
     display: block;
+  }
+  .region--complementary {
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+    max-width: 20%;
+  }
+  .region--content {
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
   }
 }
 

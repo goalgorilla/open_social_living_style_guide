@@ -1,8 +1,7 @@
 {
   "title": "Event teaser title with multiple words",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "imagePath": "http://placeimg.com/220/220/nature",
-  "image": "<img src=http://placeimg.com/220/220/nature class=img-responsive>",
+  "image": "<img src=http://placeimg.com/220/220/tech class=img-responsive>",
   "author": "Michelle Clark",
   "date": "29 Jan 2017",
   "topic_type": "Blog",
@@ -15,5 +14,5 @@
   "event_type": "Meetup",
   "enrolled": "Enrolled",
   "visibility_label": "community",
-  "visibility_icon": "community",
+  "visibility_icon": "community"
 }
