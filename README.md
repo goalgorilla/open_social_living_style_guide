@@ -3,8 +3,7 @@
 
 ![Diagram of how a component library, KSSNode styleguide and Drupal theme work together to make a living styleguide](diagram-living-styleguide.png)
 
-### *Essential reading for background and links to related resources here: 
-[Creating a Living Style Guide with Open Social](https://www.getopensocial.com/blog/open-source-technology/creating-living-style-guide-open-social)
+### *Essential reading for background and links to related resources here:[Creating a Living Style Guide with Open Social](https://www.getopensocial.com/blog/open-source-technology/creating-living-style-guide-open-social)
 
 ## Intent
 
@@ -87,7 +86,7 @@ demo theme, and you can visit http://localhost:3000/themes/custom/demo/styleguid
 
 **Teasers**: http://localhost:3000/themes/custom/demo/styleguide/section-molecules.html#kssref-molecules-teaser
 
-[Screenshot of teasers in Drupal and in styleguide](teasers.png)
+![Screenshot of teasers in Drupal and in styleguide](teasers.png)
 
 **Hero**: http://localhost:3000/themes/custom/demo/styleguide/section-organisms.html#kssref-organisms-hero
 
