@@ -1,7 +1,7 @@
 # Demo custom Drupal subtheme integrated with KSSNode as a living styleguide
 **Uses socialBase as base theme (which uses bootstrap as a base theme)**
 
-![Diagram of how a component library, KSSNode styleguide and Drupal theme work together to make a living styleguide](https://raw.githubusercontent.com/left23/open_social_living_style_guide/master/demo/diagram-styleguide.png)
+![Diagram of how a component library, KSSNode styleguide and Drupal theme work together to make a living styleguide](diagram-living-styleguide.png)
 
 ### Essential reading for background and links to related resources here: [Creating a Living Style Guide with Open Social](https://www.getopensocial.com/blog/open-source-technology/creating-living-style-guide-open-social)
 
@@ -15,19 +15,16 @@ The teaser molecules and the hero organisms are currently the only components
  They are made up of some atoms. The drupal theme template overrides 
  demonstrate how we can map twig variables in the styleguide to the drupal data.
  
- [screenshot]
- 
- The hero components include 4 types.
+The hero components include 4 types.
  
  1. the content type hero component (topic, events)
  1. the group entity hero component
  1. the profile entity hero component
  1. the hero section from the social_landing_page (example of how to integrate 3rd party module)
   
-Visually and structurally they are all quite similar. [screenshot]
-
+Visually and structurally they are all quite similar.
  
-#Motivations
+## Motivations
 
 1. Reduce inconsistency due to having either multiple developers, and/or 
 multiple contexts (example of context = hero component on profile versus on topic) without a good understanding of the holistic picture. The end-user and client don’t care about implementation. As developers we should have good reasons for differences in implementation between two seemingly similar components. "Another developer did it" is not 
@@ -42,7 +39,7 @@ of being dependent on it)
 understanding and enable the other people involved in the project to do the same (designer, backend developer, project manager, client, community manager etc)
 
 
-#Benefits
+## Benefits
 
 1. Styleguides and component libraries display the current status of design 
 components
@@ -84,6 +81,12 @@ process. See diagram above
 compiled to demo/assets/ and a demo/styleguide folder being created and 
 filled with html and css
 
+1. You can check the twig debug to verify the templates are coming from the 
+demo theme, and you can visit http://localhost:3000/themes/custom/demo/styleguide
+**Teasers**: http://localhost:3000/themes/custom/demo/styleguide/section-molecules.html#kssref-molecules-teaser
+**Hero**: http://localhost:3000/themes/custom/demo/styleguide/section-organisms.html#kssref-organisms-hero
+
+
 
 ## Known Issues
 
@@ -107,16 +110,18 @@ extended it to incorporate the `{% trans %}` Drupal twig function. The package
 isn't being replaced correctly, despite the resolution declaration in `package
 .json`. You might notice the function folder isn't present after you run `yarn 
 install`.
- I cloned it directly from here https://github
- .com/goalgorilla/twig-drupal-filters into the node_modules folder
+ I cloned it directly from here https://github.com/goalgorilla/twig-drupal-filters into the node_modules folder
 
 
 ## Troubleshooting
+
+1. If you get an error like: `Twig_Error_Loader: Template @demo/04-organisms/hero/hero.twig is not defined (Drupal\Core\Template\Loader\ThemeRegistryLoader: Unable to find template in the Drupal theme registry.) in themes/custom/demo/templates/paragraph/paragraph--hero--default.html` check 
+that you have enabled components module. See how-to step 1.
 
 1. Understand what is compiling, and to where. And how it is being attached 
 to the page (Drupal library versus kss-assets, for example). If something isn't 
 displaying as expected, look for its absence to start ruling out factors in 
 the render process. If it works in Drupal but not in the styleguide (or visa 
 versa) this indicates where along the process issues might be occurring. Good
- luck. It is not easy :)
+ luck :)
  
