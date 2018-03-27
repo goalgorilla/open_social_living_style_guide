@@ -1,0 +1,24 @@
+.hero--topic .hero-footer {
+  padding: 0 0 1rem;
+}
+
+.hero--topic .page-title {
+  padding-top: 0;
+}
+
+.hero--topic .topic_type {
+  font-weight: 500;
+}
+
+.hero--topic .hero__topic-type {
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.hero--topic .hero__topic-type-icon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}

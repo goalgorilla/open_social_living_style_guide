@@ -40,6 +40,7 @@ options.rootPath = {
   styleGuide      : __dirname + '/styleguide/',
   basetheme       : __dirname + '/../../../profiles/contrib/social/themes/socialbase/',
   drupal          : __dirname + '/../../../core/',
+  social          : __dirname + '/../../../profiles/contrib/social/modules/social_features/social_landing_page/'
 };
 
 options.theme = {
@@ -62,6 +63,16 @@ options.basetheme = {
   js         : options.rootPath.basetheme + 'assets/js/'
 };
 
+options.social = {
+  name       : 'social',
+  root       : options.rootPath.social,
+  components : options.rootPath.social + 'css/',
+  build      : options.rootPath.social + 'assets/',
+  css        : options.rootPath.social + 'assets/css/',
+  js         : options.rootPath.social + 'assets/js/'
+};
+
+
 // Define the node-sass configuration. The includePaths is critical!
 options.sass = {
   importer: importOnce,
@@ -72,6 +83,7 @@ options.sass = {
 };
 
 var sassFiles = [
+  options.social.components + '*.scss',
   options.theme.components + '**/*.scss',
   // Do not open Sass partials as they will be included as needed.
   '!' + options.theme.components + '**/_*.scss'
@@ -94,6 +106,7 @@ options.styleGuide = {
   'source': [
     options.theme.components,
     options.basetheme.components,
+    options.social.components
   ],
   'mask': /\.less|\.sass|\.scss|\.styl|\.stylus/,
   destination: options.rootPath.styleGuide,
@@ -167,6 +180,7 @@ options.styleGuide = {
     'kss-assets/css/social_landing_page.section.button.css',
     'kss-assets/css/social_landing_page.section.featured.css',
     // a non-ideal way of adding the social_ contrib module css
+    '../../../profiles/contrib/social/modules/social_features/social_landing_page/css/social_landing_page.section.hero.css',
     '../../../../modules/contrib/social_landing_page/css/social_landing_page.section.hero.css',
     'kss-assets/css/social_landing_page.section.hero.css',
 
@@ -297,7 +311,16 @@ gulp.task('build-styleguide', function(done) {
 // Copy drupal scripts from drupal to make them available for the styleguide
 gulp.task('scripts-drupal', function() {
   return gulp.src([
-
+    options.rootPath.drupal + 'assets/vendor/domready/ready.min.js',
+    options.rootPath.drupal + 'assets/vendor/jquery/jquery.min.js',
+    options.rootPath.drupal + 'assets/vendor/jquery-once/jquery.once.min.js',
+    options.rootPath.drupal + '/misc/drupalSettingsLoader.js',
+    options.rootPath.drupal + '/misc/drupal.js',
+    options.rootPath.drupal + '/misc/debounce.js',
+    options.rootPath.drupal + '/misc/forms.js',
+    options.rootPath.drupal + '/misc/tabledrag.js',
+    options.rootPath.drupal + '/modules/user/user.js',
+    options.rootPath.drupal + '/modules/file/file.js'
   ])
     .pipe( concat('drupal-core.js') )
     .pipe( gulp.dest(options.rootPath.styleGuide + 'kss-assets/') );
@@ -314,7 +337,7 @@ gulp.task('scripts-drupal', function() {
 gulp.task('watch', ['styles', 'watch:styleguide', 'icons-watch', 'watch:js'], function () {
 
   browserSync.init({
-    proxy: "social.test:32773"
+    proxy: "social.test:32769"
   });
 
   gulp.watch(options.theme.components + '**/*.scss', ['styles']);
