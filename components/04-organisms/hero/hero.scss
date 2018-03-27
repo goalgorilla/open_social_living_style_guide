@@ -34,45 +34,6 @@
   color: white;
 }
 
-.hero-form[role='search'] {
-
-  .form-control {
-    border-radius: $input-border-radius;
-
-    &:focus,
-    &:active,
-    &:focus ~ .search-icon,
-    &:active ~ .search-icon {
-      border-bottom: 1px solid $brand-secondary;
-      box-shadow: 0 2px 0 0 $brand-secondary;
-    }
-
-  }
-
-  .form-submit,
-  .search-icon {
-    border-radius: 0 $input-border-radius $input-border-radius 0;
-  }
-
-  .search-icon {
-    fill: $brand-primary;
-    background: white;
-  }
-
-}
-
-.hero {
-
-  .hero-footer {
-    padding: 0 0 1rem;
-  }
-
-  .page-title {
-    padding-top: 0;
-  }
-
-}
-
 .node_type {
   font-weight: 500;
   display: inline-block;

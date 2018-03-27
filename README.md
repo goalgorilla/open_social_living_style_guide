@@ -3,7 +3,8 @@
 
 ![Diagram of how a component library, KSSNode styleguide and Drupal theme work together to make a living styleguide](diagram-living-styleguide.png)
 
-### Essential reading for background and links to related resources here: [Creating a Living Style Guide with Open Social](https://www.getopensocial.com/blog/open-source-technology/creating-living-style-guide-open-social)
+### *Essential reading for background and links to related resources here: 
+[Creating a Living Style Guide with Open Social](https://www.getopensocial.com/blog/open-source-technology/creating-living-style-guide-open-social)
 
 ## Intent
 
@@ -83,7 +84,9 @@ filled with html and css
 
 1. You can check the twig debug to verify the templates are coming from the 
 demo theme, and you can visit http://localhost:3000/themes/custom/demo/styleguide
+
 **Teasers**: http://localhost:3000/themes/custom/demo/styleguide/section-molecules.html#kssref-molecules-teaser
+
 **Hero**: http://localhost:3000/themes/custom/demo/styleguide/section-organisms.html#kssref-organisms-hero
 
 

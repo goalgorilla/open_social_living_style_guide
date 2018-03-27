@@ -1,5 +1,4 @@
-# Living styleguide for <span class="text-primary">Demo</span> custom 
-Drupal subtheme
+# Living styleguide for Demo custom Drupal subtheme
 
 __Based on Open Social - a Drupal 8 distribution for building social communities 
 and intranets.__
