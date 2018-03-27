@@ -87,6 +87,8 @@ demo theme, and you can visit http://localhost:3000/themes/custom/demo/styleguid
 
 **Teasers**: http://localhost:3000/themes/custom/demo/styleguide/section-molecules.html#kssref-molecules-teaser
 
+[Screenshot of teasers in Drupal and in styleguide](teasers.png)
+
 **Hero**: http://localhost:3000/themes/custom/demo/styleguide/section-organisms.html#kssref-organisms-hero
 
 
